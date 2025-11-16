@@ -1,9 +1,7 @@
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Hero from './components/Hero'
 import { AboutSection, CommitteesGrid, ProjectsPreview, ExchangesCTA, TeamPreview, CTASection } from './components/Sections'
 
-function HomePage(){
+export default function Home(){
   return (
     <>
       <Hero/>
@@ -16,15 +14,5 @@ function HomePage(){
         <CTASection/>
       </div>
     </>
-  )
-}
-
-export default function App(){
-  return (
-    <div className="min-h-screen bg-white text-slate-900">
-      <Navbar/>
-      <HomePage/>
-      <Footer/>
-    </div>
   )
 }
